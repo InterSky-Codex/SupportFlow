@@ -1,0 +1,44 @@
+# Local environment and secrets
+/.env
+/.env.*
+!/.env.example
+
+# Dependencies
+/vendor/
+
+# Runtime data
+/storage/uploads/
+/storage/logs/*
+!/storage/logs/.gitignore
+/storage/cache/*
+!/storage/cache/.gitignore
+/public/uploads/*
+!/public/uploads/.gitignore
+
+# Local tests and one-off scripts
+/scratch/
+/run_migration.php
+
+# Local database exports and temporary files
+/*.sql
+!/.env.example
+/*dump*.sql
+/*backup*.sql
+*.sql.gz
+*.bak
+*.old
+*.tmp
+*.temp
+*.log
+*.zip
+
+# Test and tooling caches
+.phpunit.result.cache
+.phpunit.cache/
+
+# IDE and OS files
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
